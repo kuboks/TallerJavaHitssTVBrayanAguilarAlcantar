@@ -7,9 +7,10 @@ public class Ejercicio7 {
         Scanner sc= new Scanner(System.in);
         System.out.print("Ingresa un numero mayor a 0: ");
         int tamañoMatriz = sc.nextInt();
-        if(tamañoMatriz<0){
+        if(tamañoMatriz<=0){
             System.out.println("Error D:");
-            System.exit(-1);
+            System.out.println("Ingreso un numero igual o menor que 0");
+            System.exit(1);
         }
 
         String[][] matriz = new String[tamañoMatriz][tamañoMatriz];
